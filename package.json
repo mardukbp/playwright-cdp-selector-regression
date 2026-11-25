@@ -1,0 +1,14 @@
+{
+  "name": "playwright-cdp-selector-regression",
+  "private": true,
+  "scripts": {
+    "install-browser": "node node_modules/playwright-core-1.53.0/cli.js install chromium",
+    "chrome": "node node_modules/playwright-core-1.53.0/cli.js launch-server --browser chromium --config chrome.json",
+    "test:1.52.0": "node repro.js playwright-core-1.52.0",
+    "test:1.53.0": "node repro.js playwright-core-1.53.0"
+  },
+  "dependencies": {
+    "playwright-core-1.52.0": "npm:playwright-core@1.52.0",
+    "playwright-core-1.53.0": "npm:playwright-core@1.53.0"
+  }
+}
