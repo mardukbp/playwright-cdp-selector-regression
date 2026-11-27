@@ -5,10 +5,16 @@
     "install-browser": "node node_modules/playwright-core-1.53.0/cli.js install chromium",
     "chrome": "node node_modules/playwright-core-1.53.0/cli.js launch-server --browser chromium --config chrome.json",
     "test:1.52.0": "node repro.js playwright-core-1.52.0",
-    "test:1.53.0": "node repro.js playwright-core-1.53.0"
+    "test:1.53.0": "node repro.js playwright-core-1.53.0",
+    "test:next": "node repro.js playwright-core-1.66.0-alpha-2026-11-27",
+    "test-console-log-element:1.52.0": "node repro-console.js playwright-core-1.52.0",
+    "test-console-log-element:1.53.0": "node repro-console.js playwright-core-1.53.0",
+    "test-console-log-element:next": "node repro-console.js playwright-core-1.66.0-alpha-2026-11-27",
+    "test-console-log-string:next": "node repro-console.js playwright-core-1.66.0-alpha-2026-11-27 --log-string"
   },
   "dependencies": {
     "playwright-core-1.52.0": "npm:playwright-core@1.52.0",
-    "playwright-core-1.53.0": "npm:playwright-core@1.53.0"
+    "playwright-core-1.53.0": "npm:playwright-core@1.53.0",
+    "playwright-core-1.66.0-alpha-2026-11-27": "npm:playwright-core@1.66.0-alpha-2026-11-27"
   }
 }
